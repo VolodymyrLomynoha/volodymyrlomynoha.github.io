@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volodymyr Lomynoha — Indie Games</title>
+    <title>Volodymyr Lomynoha — Indie Games Developer</title>
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Caveat:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -15,6 +15,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            line-height: 1.6;
         }
         header {
             padding: 40px 20px;
@@ -33,7 +34,7 @@
         }
         main {
             flex: 1;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 20px;
             width: 100%;
@@ -43,19 +44,28 @@
             background: #FFFFFF;
             border: 2px dashed #CBD5E0;
             border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
         .card h2 {
             margin-top: 0;
             color: #2B6CB0;
+            font-size: 1.8rem;
+        }
+        .google-notice {
+            background-color: #EBF8FF;
+            border-left: 4px solid #3182CE;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.95rem;
+            border-radius: 0 8px 8px 0;
         }
         .btn {
             display: inline-block;
             background-color: #3182CE;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
@@ -92,31 +102,47 @@
 
     <header>
         <h1>Volodymyr Lomynoha</h1>
-        <div class="tagline">Independent Mobile Game Developer</div>
+        <div class="tagline">Independent Mobile Game Developer Studio</div>
     </header>
 
     <main>
-        <!-- Гра 1: Flick & Strike -->
+        <!-- Про нас та ігри -->
         <div class="card">
-            <h2>Flick & Strike — Paper Wars</h2>
-            <p>Тактичні битви паперових літаків на зошитовому папері. Прораховуйте кути, долайте перешкоди (гумки, олівці), проходьте сюжетну кампанію з 30 рівнів та створюйте власні мапи у вбудованому редакторі!</p>
-            <a href="https://play.google.com/store/apps/details?id=com.lomynoha.flickandstrike" class="btn" target="_blank">Завантажити в Google Play</a>
+            <h2>Про нас та наші ігри</h2>
+            <p>Ми є незалежним розробником мобільних ігор, що створює захопливі та безпечні проєкти для гравців по всьому світу. Наші ігри розроблені з дотриманням високих стандартів якості, забезпечуючи стабільну роботу в офлайн та онлайн режимах.</p>
+            
+            <h3 style="color: #2C5282; margin-top: 25px;">1. Flick & Strike — Paper Wars</h3>
+            <p>Тактична покрокова стратегія, стилізована під малюнки у шкільному зошиті. Гравці керують флотилією паперових літаків, роблять постріли за допомогою унікальної механіки «рогатки», долають фізичні перешкоди (гумки, олівці, точилки) та проходять складні рівні у сюжетній кампанії. Додаток також містить повноцінний редактор рівнів для створення власних мап.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.lomynoha.flickandstrike" class="btn" target="_blank">Google Play: Flick & Strike</a>
+
+            <h3 style="color: #2C5282; margin-top: 30px;">2. Pan Kotskyi Maze</h3>
+            <p>Захоплива гра-лабіринт у колоритному українському стилі. Гравці проходять різноманітні рівні, вирішують головоломки та взаємодіють з ігровим світом.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.lomynoha.pankotskyi.maze" class="btn" target="_blank">Google Play: Pan Kotskyi Maze</a>
         </div>
 
-        <!-- Гра 2: Pan Kotskyi Maze -->
+        <!-- Пояснення щодо використання Google Services (КРИТИЧНО для модераторів) -->
         <div class="card">
-            <h2>Pan Kotskyi Maze</h2>
-            <p>Захоплива гра-лабіринт у колоритному українському стилі. Допоможіть Пану Коцькому знайти вихід, збирайте бонуси та долайте перешкоди на шляху!</p>
-            <a href="https://play.google.com/store/apps/details?id=com.lomynoha.pankotskyi.maze" class="btn" target="_blank">Завантажити в Google Play</a>
+            <h2>Використання служб Google та обробка даних</h2>
+            <p>Наші ігри розроблені за принципом <strong>«Offline-First»</strong> — увесь основний ігровий прогрес зберігається локально на вашому пристрої.</p>
+            
+            <div class="google-notice">
+                <strong>Навіщо нам потрібен вхід через Google Play Games:</strong><br>
+                Ми використовуємо інтеграцію зі службами Google Play Games Services виключно для таких функцій:
+                <ul>
+                    <li>✅ <strong>Хмарні збереження (Cloud Saves):</strong> Автоматичне синхронізація ігрового прогресу, зірок кампанії та куплених предметів між пристроями користувача.</li>
+                    <li>✅ <strong>Досягнення (Achievements):</strong> Розблокування та відстеження досягнень у профілі Google Play.</li>
+                </ul>
+                Ми <strong>не</strong> збираємо, не зберігаємо і не передаємо третім особам жодних конфіденційних персональних даних (паролів, контактів тощо). Аутентифікація відбувається безпечно через офіційні API Google.
+            </div>
         </div>
 
-        <!-- Docs and contacts-->
+        <!-- Документи та контакти -->
         <div class="card">
-            <h2>Документація та підтримка</h2>
+            <h2>Юридична інформація та контакти</h2>
             <ul>
-                <li><a href="https://volodymyrlomynoha.github.io/privacy.html" target="_blank">Політика конфіденційності (Privacy Policy)</a></li>
-                <li><a href="https://volodymyrlomynoha.github.io/terms.html" target="_blank">Умови використання (Terms of Service)</a></li>
-                <li>Зв'язок з розробником: <a href="mailto:lomynoha@gmail.com">suppor8t@gmail.com</a></li>
+                <li>📄 <a href="privacy.html" target="_blank">Політика конфіденційності (Privacy Policy)</a></li>
+                <li>📄 <a href="terms.html" target="_blank">Умови використання (Terms of Service)</a></li>
+                <li>✉️ Зв'язок з розробником: <a href="mailto:lomynoha@gmail.com">suppor8t@gmail.com</a></li>
             </ul>
         </div>
     </main>
